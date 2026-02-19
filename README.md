@@ -8,7 +8,7 @@ NileBites is a modern, responsive landing page for a startup restaurant. It is d
 - **Frontend Developer A (Structure):** [Abdelrahman Ali ]
 - **Frontend Developer B (Styling):** [Arwa mohamed hassan]
 - **QA & Code Reviewer:** [Ahmed mahmoud]
-- **Release Manager:** Aya Ahmed (Documentation & Versioning)
+- **Release Manager:** Aya Ahmed Elrayes (Documentation & Versioning)
 
 ## ✨ Delivered Features
 - Responsive Hero Section with Call-to-Action buttons.
