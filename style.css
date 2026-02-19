@@ -1,3 +1,101 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.4);          
+  backdrop-filter: blur(8px);             
+}
+
+.navbar.scrolled {
+  background: rgba(26, 26, 26, 0.95);      
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  background: linear-gradient(90deg, #f4a261, #e76f51);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f4a261;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #f4a261;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-reserve {
+  padding: 0.7rem 1.8rem;
+  background-color: #e76f51;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(231, 111, 81, 0.3);
+}
+
+.btn-reserve:hover {
+  background-color: #d65a3d;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(231, 111, 81, 0.5);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;                   
+  }
+  
+  .btn-reserve {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.95rem;
+  }
 .hero {
   position: relative;
   height: 90vh;                    
